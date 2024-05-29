@@ -789,21 +789,21 @@ export const imprimirNote1 = async (req, res) => {
             doc.addTable(
 
               [
-                {key: 'posicion', label: '#', align: 'left'},
-                {key: 'name', label: 'Nombre', align: 'left'},
-                {key: 'apellido', label: 'Apelido', align: 'left'},
-                {key: 'email', label: 'Email', align: 'left'},
+                {key: 'posicion', label: '#', align: 'center'},
+                {key: 'name', label: 'Nombre', align: 'center'},
+                {key: 'email', label: 'Email', align: 'center'},
                 {key: 'puntos', label: 'Puntos', align: 'center'},
 
               ],
               pedi, {
-                  border: null,
-                  width: "auto",
-                  striped: true,
-                  stripedColors: ["#f6f6f6", "#d6c4dd"],
-                  cellsPadding: 10,
-                  marginLeft: 25,
-                  marginRight: 25
+                border: null,
+                width: "fill_body",
+                striped: true,
+                stripedColors: ["#f6f6f6", "#d6c4dd"],
+                cellsPadding: 10,
+                marginLeft: 25,
+                marginRight: 25,
+                cellsFontSize : 8
               });
 
              // set the footer to render in every page
@@ -865,21 +865,21 @@ export const imprimirNote5 = async (req, res) => {
             doc.addTable(
 
               [
-                {key: 'posicion', label: '#', align: 'left'},
-                {key: 'name', label: 'Nombre', align: 'left'},
-                {key: 'apellido', label: 'Apelido', align: 'left'},
-                {key: 'email', label: 'Email', align: 'left'},
+                {key: 'posicion', label: '#', align: 'center'},
+                {key: 'name', label: 'Nombre', align: 'center'},
+                {key: 'email', label: 'Email', align: 'center'},
                 {key: 'puntos', label: 'Puntos', align: 'center'},
 
               ],
               pedi, {
-                  border: null,
-                  width: "auto",
-                  striped: true,
-                  stripedColors: ["#f6f6f6", "#d6c4dd"],
-                  cellsPadding: 10,
-                  marginLeft: 25,
-                  marginRight: 25
+                border: null,
+                width: "fill_body",
+                striped: true,
+                stripedColors: ["#f6f6f6", "#d6c4dd"],
+                cellsPadding: 10,
+                marginLeft: 25,
+                marginRight: 25,
+                cellsFontSize : 8
               });
 
              // set the footer to render in every page
@@ -940,21 +940,21 @@ export const imprimirNote6 = async (req, res) => {
             doc.addTable(
 
               [
-                {key: 'posicion', label: '#', align: 'left'},
-                {key: 'name', label: 'Nombre', align: 'left'},
-                {key: 'apellido', label: 'Apelido', align: 'left'},
-                {key: 'email', label: 'Email', align: 'left'},
+                {key: 'posicion', label: '#', align: 'center'},
+                {key: 'name', label: 'Nombre', align: 'center'},
+                {key: 'email', label: 'Email', align: 'center'},
                 {key: 'puntos', label: 'Puntos', align: 'center'},
 
               ],
               pedi, {
-                  border: null,
-                  width: "auto",
-                  striped: true,
-                  stripedColors: ["#f6f6f6", "#d6c4dd"],
-                  cellsPadding: 10,
-                  marginLeft: 25,
-                  marginRight: 25
+                border: null,
+                width: "fill_body",
+                striped: true,
+                stripedColors: ["#f6f6f6", "#d6c4dd"],
+                cellsPadding: 10,
+                marginLeft: 25,
+                marginRight: 25,
+                cellsFontSize : 8
               });
 
              // set the footer to render in every page
@@ -1015,21 +1015,21 @@ export const imprimirNote7 = async (req, res) => {
             doc.addTable(
 
               [
-                {key: 'posicion', label: '#', align: 'left'},
-                {key: 'name', label: 'Nombre', align: 'left'},
-                {key: 'apellido', label: 'Apelido', align: 'left'},
-                {key: 'email', label: 'Email', align: 'left'},
+                {key: 'posicion', label: '#', align: 'center'},
+                {key: 'name', label: 'Nombre', align: 'center'},
+                {key: 'email', label: 'Email', align: 'center'},
                 {key: 'puntos', label: 'Puntos', align: 'center'},
 
               ],
               pedi, {
-                  border: null,
-                  width: "auto",
-                  striped: true,
-                  stripedColors: ["#f6f6f6", "#d6c4dd"],
-                  cellsPadding: 10,
-                  marginLeft: 25,
-                  marginRight: 25
+                border: null,
+                width: "fill_body",
+                striped: true,
+                stripedColors: ["#f6f6f6", "#d6c4dd"],
+                cellsPadding: 10,
+                marginLeft: 25,
+                marginRight: 25,
+                cellsFontSize : 8
               });
 
              // set the footer to render in every page
