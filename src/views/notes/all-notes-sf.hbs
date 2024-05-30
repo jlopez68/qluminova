@@ -1,45 +1,91 @@
-<h1>Bienvenido a la Semifinal {{nombre}} </h1>
+<div  >
+<br>
+<h1 style="text-align:center; font-size: 2.5vh; color:white" > {{nombre}}   {{apellido}} </h1>
+ <h1 style="text-align:center; font-size: 2.5vh; color:white"  >Bienvenido a la Semi Final</h1> 
+<br>
+<h2 style="font-size:2.5vh; text-align:left; margin-left:25%; color:white">Su puntuación:  <b>   {{puntos}} </b></h2>
+<h2 style="font-size:2.5vh; text-align:left; margin-left:25%;color:white">estas Ubicado en la Posición: <b> {{posicion}}</b></h2>
+<br>
 
 
-<div>
-
-<!--
-
-{{#if notes}}
-
-  <table class="table table-bordered table-hover table-dark">
-    <thead>
-      <tr>
-
-        <th>GRUPO</th>
-        <th>FECHA</th>
-        <th>EQUIPO</th>
-        <th>RESULTADO</th>
-        <th>EQUIPO </th>
-        <th>RESULTADO</th>
-        <th >Accion</th>
-      </tr>
-    </thead>
-    <tbody>
-      {{#each notes}}
-        <tr>
-          <td>{{grupo}}</td>
-          <td>{{fecha}}</td>
-          <td>{{equipo1}}</td>
-          <td>{{pronostico1}}</td>
-          <td>{{equipo2}}</td>
-          <td>{{pronostico2}}</td>
-          <td><a href="/notes/edit/{{_id}}"><i class="fas fa-pen-alt" style="color: black"></i></a></td>
-          
-        </tr>
-       {{/each}}
-    </tbody>
-  </table>
-{{/if}}
-</div>
-
--->
+      <br><br>      <br><br>
 <div class="container">
 
          <img  style="width: 50%;" src="/img/construccion.jpg">
+</div>
+
+<!--
+<div class="col-md-4 mx-auto">
+  <div class="card">
+    <div class="card-header bg-dark text-center">
+      <h3 class="text-white">GRAN FINAL</h3>
+    </div>
+    <div class="card-body ">
+        <form action="/notes/edit-note/{{note._id}}?_method=PUT" method="POST">
+        <input type="hidden" name="_method" value="PUT" />
+        <div class="mb-3">
+          <label for="description">EQUIPO</label>
+            <input
+            type="text"
+            name="equipo1"
+            class="form-control"
+            value = "{{note.equipo1}}"
+  
+          />
+        </div>
+        <div class="mb-3">
+          <label for="description">GOLES</label>
+            <input
+            type="text"
+            name="resultado1"
+            class="form-control"
+            value = "{{note.resultado1}}"
+            
+          />
+        </div>
+        <div class="mb-3">
+          <label for="description">EQUIPO</label>
+            <input
+            type="text"
+            name="equipo2"
+            class="form-control"
+            value = "{{note.equipo2}}"
+          />
+        </div>
+                <div class="mb-3">
+          <label for="description">GOLES</label>
+            <input
+            type="text"
+            name="resultado2"
+            class="form-control"
+            value = "{{note.resultado2}}"
+            
+          />
+        </div>
+                          <div class="mb-3">
+          <label for="description">EQUIPO EN MARCAR EL PRIMER GOL</label>
+            <input
+            type="text"
+            name="resultado2"
+            class="form-control"
+            value = "{{note.equipogol}}"
+            
+          />
+        </div>
+         <input class="visually-hidden" type="text" name="jugado" value="S" readonly>
+         <input class="visually-hidden" type="text" name="grupo" value="FN" readonly>
+         <input class="visually-hidden" type="text" name="fecha" value="14/07/2024" readonly>
+
+         
+
+ 
+          <button class="btn btn-success btn-block">Guardar</button>
+
+
+      </form>
+    </div>
+
+  </div>
+      <br><br>      <br><br>
+</div>-->
 </div>
