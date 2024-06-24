@@ -456,19 +456,19 @@ export const calcularposicion = async (req, res) => {
      let ver = JSON.stringify(_id[step]); 
      var ver1 = ver.slice(10,-2);
      
-  console.log(ver);
-  console.log(ver1);
+  /*console.log(ver);
+  console.log(ver1);*/
   const notes100 = await User.findOne( {email:ver1}).lean();
     const pos = step+1;   
-    console.log("pos1",pos);
-    console.log("email",notes100.email);
+    console.log("ecuador-pos1",pos);
+/*    console.log("email",notes100.email);*/
        
     const doc2 = await Usuario.updateOne({email: notes100.email},  {posicion:pos});
     if(err) {
       console.log("error");
       console.log(err);
     }
-    console.log("aca entre");
+
     
    }
   }
@@ -487,19 +487,19 @@ export const calcularposicion = async (req, res) => {
       let ver = JSON.stringify(_id[step]); 
       var ver1 = ver.slice(10,-2);
       
-   console.log(ver);
-   console.log(ver1);
+ /*  console.log(ver);
+   console.log(ver1);*/
    const notes100 = await User.findOne( {email:ver1}).lean();
      const pos = step+1;   
-     console.log("pos1",pos);
-     console.log("email",notes100.email);
+     console.log("bolivia-pos1",pos);
+/*     console.log("email",notes100.email);*/
         
      const doc2 = await Usuario.updateOne({email: notes100.email},  {posicion:pos});
      if(err) {
        console.log("error");
        console.log(err);
      }
-     console.log("aca entre");
+
      
     }
    }
@@ -522,15 +522,15 @@ export const calcularposicion = async (req, res) => {
    console.log(ver1);
    const notes100 = await User.findOne( {email:ver1}).lean();
      const pos = step+1;   
-     console.log("pos1",pos);
-     console.log("email",notes100.email);
+     console.log("colombia-pos1",pos);
+/*     console.log("email",notes100.email);*/
         
      const doc2 = await Usuario.updateOne({email: notes100.email},  {posicion:pos});
      if(err) {
        console.log("error");
        console.log(err);
      }
-     console.log("aca entre");
+
      
     }
    }
@@ -549,20 +549,20 @@ export const calcularposicion = async (req, res) => {
    //       console.log(_id.usuario[0])  
       let ver = JSON.stringify(_id[step]); 
       var ver1 = ver.slice(10,-2);
-      
+     /* 
    console.log(ver);
-   console.log(ver1);
+   console.log(ver1);*/
    const notes100 = await User.findOne( {email:ver1}).lean();
      const pos = step+1;   
-     console.log("pos1",pos);
-     console.log("email",notes100.email);
+     console.log("peru-pos1",pos);
+ /*    console.log("email",notes100.email);*/
         
      const doc2 = await Usuario.updateOne({email: notes100.email},  {posicion:pos});
      if(err) {
        console.log("error");
        console.log(err);
      }
-     console.log("aca entre");
+
      
     }
    }
